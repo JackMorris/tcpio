@@ -4,6 +4,7 @@
 package main
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"net"
@@ -13,7 +14,8 @@ import (
 func main() {
 	// Get the remote host.
 	if len(os.Args) != 2 {
-		log.Fatal("Usage: netcat \"<ip>:<port>\"")
+		fmt.Println("Usage: netcat \"<ip>:<port>\"")
+		os.Exit(1)
 	}
 
 	// Connect to the remote host.

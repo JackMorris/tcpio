@@ -14,7 +14,7 @@ import (
 func main() {
 	// Get the remote host.
 	if len(os.Args) != 2 {
-		fmt.Println("Usage: netcat \"<ip>:<port>\"")
+		fmt.Println("Usage: tcpio \"<ip>:<port>\"")
 		os.Exit(1)
 	}
 
